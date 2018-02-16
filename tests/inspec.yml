@@ -1,0 +1,8 @@
+name: Docker with ChefDK
+title: Docker with ChefDK
+maintainer: Damacus
+copyright: Dan Webb
+copyright_email:
+license: Apache-2.0
+summary: An InSpec Compliance Profile for ChefDK builder
+version: 0.1.0

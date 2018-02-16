@@ -1,0 +1,8 @@
+version: '3.2'
+
+services:
+  composer_builder:
+    image: damacus/chef-dk-builder:latest
+    entrypoint: /bin/bash
+    stdin_open: true
+    tty: true

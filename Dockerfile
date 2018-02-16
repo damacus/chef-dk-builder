@@ -4,7 +4,7 @@ RUN apk add --no-cache bash curl                                                
     curl https://raw.githubusercontent.com/habitat-sh/habitat/master/components/hab/install.sh | bash &&\
     hab pkg install --binlink core/curl core/openssl core/git core/cacerts core/libffi                &&\
     update-ca-certificates
-RUN hab pkg install thom/chef-dk -c unstable --binlink
+RUN hab pkg install thom/chef-dk -c unstable --binlink --force
 
 RUN mkdir /project
 WORKDIR /project

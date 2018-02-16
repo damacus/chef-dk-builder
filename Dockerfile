@@ -1,9 +1,9 @@
 FROM docker:stable-git
 
-RUN apk add --no-cache bash curl &&\
+RUN apk add --no-cache bash curl                                                                      &&\
     curl https://raw.githubusercontent.com/habitat-sh/habitat/master/components/hab/install.sh | bash &&\
-    hab pkg install --binlink core/curl core/openssl core/git core/cacerts core/libffi
-    update-ca-certificates &&\
+    hab pkg install --binlink core/curl core/openssl core/git core/cacerts core/libffi                &&\
+    update-ca-certificates
 RUN hab pkg install thom/chef-dk -c unstable --binlink
 
 RUN mkdir /project
